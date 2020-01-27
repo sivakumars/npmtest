@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import styles from './styles.css'
 
-export default class ExampleComponent extends Component {
+export default class Header extends Component {
   static propTypes = {
     text: PropTypes.string
   }
@@ -14,9 +14,9 @@ export default class ExampleComponent extends Component {
     } = this.props
 
     return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
+      <header className={styles.test}>
+        <h1>{text}</h1>
+      </header>
     )
   }
 }
