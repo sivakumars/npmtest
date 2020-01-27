@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import styles from './styles.css'
 
-export default class Header extends Component {
+export default class PrimaryHeader extends Component {
   static propTypes = {
     text: PropTypes.string
   }

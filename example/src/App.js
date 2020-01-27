@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-import Header from 'npmtest'
+import PrimaryHeader from 'npmtest'
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <Header text='Primary Heading' />
+        <PrimaryHeader text='Primary Heading' />
       </div>
     )
   }
