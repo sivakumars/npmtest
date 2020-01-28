@@ -3,3 +3,32 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.m15{
+    margin: 15px;
+}
+
+.flex{
+  display: flex;
+}
+ 
+.row{
+  flex-direction:  row;
+}
+ 
+.column{
+    flex-direction: column;
+}
+ 
+.absolute{
+  position: absolute;
+}
+ 
+.center{
+    text-align:  center;
+}
+ 
+.center-center{
+  justify-content: center;
+  align-items: center;
+}
