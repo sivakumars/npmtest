@@ -1,0 +1,19 @@
+.btn{
+    width: 150px;
+    padding: 8px;
+    background: transparent;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+ 
+    &.raised{
+        background-color: rgba(0,0,255,0.5);
+    }
+    &:disabled{
+        cursor: not-allowed;
+    }
+}
