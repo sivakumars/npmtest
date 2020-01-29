@@ -4,6 +4,10 @@ body {
   font-family: sans-serif;
 }
 
+.p15{
+    padding: 30px;
+}
+
 .m15{
     margin: 15px;
 }

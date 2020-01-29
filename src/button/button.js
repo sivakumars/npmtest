@@ -1,15 +1,21 @@
 import React from 'react';
 import buttonStyle from './button.scss';
 
-export const Button = ({ state, text, click, type, name, variant, classes }) => {
+export const Button = ({ id, state, name, onClick, type, variant, color, classes, children, autoFocus }) => {
+    console.log(autoFocus);
+    let className = `${buttonStyle.btn} ${variant ? buttonStyle[variant] : ''} ${color ? buttonStyle[color] : ''} ${classes ? classes : ''}`.toString().trim();
     return (
         <button
-            name={name}
+            name={name && name.toString().replace(/\s/g, '')}
             disabled={state === 'disabled' || state === 'loading'}
-            onClick={click}
+            onClick={onClick}
             type={type}
-            className={`${buttonStyle.btn} ${buttonStyle[variant]}`}>
-            {text} {(state === 'loading') ? <span>...</span> : ''}
+            id={id}
+            className={className}
+            autoFocus={autoFocus}
+        >
+            {children}
+            {(state === 'loading') ? <span>...</span> : ''}
         </button>
     )
 }
