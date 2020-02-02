@@ -36,3 +36,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.wh100{
+  width: 100px;
+  height: 100px;
+}
+
+.pl10{
+  padding-left: 10px;
+}
