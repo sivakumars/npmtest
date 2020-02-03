@@ -4,6 +4,10 @@ body {
   font-family: sans-serif;
 }
 
+.p15{
+    padding: 30px;
+}
+
 .m15{
     margin: 15px;
 }
@@ -31,4 +35,13 @@ body {
 .center-center{
   justify-content: center;
   align-items: center;
+}
+
+.wh100{
+  width: 100px;
+  height: 100px;
+}
+
+.pl10{
+  padding-left: 10px;
 }

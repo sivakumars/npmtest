@@ -1,0 +1,70 @@
+
+@mixin setWidth($width) {
+    min-width: $width;
+    max-width: $width;
+    min-height: $width;
+    max-width: $width;
+}
+
+.avatar{
+    border-radius: 50%;
+    display: flex;
+    margin: 15px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.39;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0);
+
+    &.xs{
+      @include setWidth(28px);
+    }
+    
+    &.sm{
+        @include setWidth(38px);
+        font-size: 16px;
+    }
+
+    &.md{
+        @include setWidth(60px);
+        font-size: 18px;
+    }
+    
+    &.lg{
+        @include setWidth(80px);
+        font-size: 36px;
+    }
+
+    &.xl{
+        @include setWidth(100px);
+        font-size: 36px;
+    }
+
+    &.primary{
+        background-color: #1665d8;
+    }   
+
+    &.secondary{
+        background-color: #e6492d;
+    }
+
+    &.success{
+        background-color: #34aa44;
+    }
+
+    &.warn{
+        background-color: #f6ab2f;
+    }
+
+}
+
+.avatar img{
+    @extend .avatar;
+    min-width: inherit;
+    min-height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+}

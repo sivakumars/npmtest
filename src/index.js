@@ -1,3 +1,4 @@
-export { Button } from './button/button'; // exporting button
+export { Button } from './button/Button'; // exporting button
+export { Avatar } from './avatar/Avatar'; // exporting Avator
 
 

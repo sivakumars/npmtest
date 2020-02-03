@@ -59,6 +59,7 @@
     "dist"
   ],
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "styled-components": "^5.0.0"
   }
 }
