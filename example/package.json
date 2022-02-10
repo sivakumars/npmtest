@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "npmtest": "file:..",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
